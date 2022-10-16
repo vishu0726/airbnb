@@ -4,12 +4,12 @@ import {Button} from "@mui/material";
 import Search from './Search';
 
 function Banner() {
-    const[showSearch, setShowSearch] = useState(true)
+    const[showSearch, setShowSearch] = useState(false)
   return (
     <div className='banner'>
         <div className='banner_search'>
             {showSearch && <Search/>}
-            <Button onClick={() => setShowSearch(!showSearch)} className='banner_search_button' variant='outlined'>Search Dates</Button>
+            <Button onClick={() => setShowSearch(!showSearch)} className='banner_search_button' variant='outlined'>{showSearch ? "Hide" : "Search Date"}</Button>
         </div>
         <div className='banner_info'>
             <h1>Get out and streach your imagination</h1>
