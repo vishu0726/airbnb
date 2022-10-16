@@ -1,0 +1,31 @@
+@media(min-width: 391px) {
+    
+    .header_icon{
+        object-fit: contain;
+        height: 80px;
+        margin-left: 10px;
+    }
+    .header_center{
+        display: flex;
+        flex: 1;
+        align-items: center;
+        max-width: fit-content;
+        padding: 10px;
+        height: 30px;
+        border: 1px solid lightgray;
+        border-radius: 999px;
+    }
+    .header_center > input {
+        border: none;
+        width: 250px;
+        padding: 10px;
+        outline-width: 0;
+    }
+    .header_right{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 15vw;
+        margin-right: 80px;
+    } 
+}
